@@ -141,7 +141,7 @@
             Text = "-",
             TextSize = 17,
             TextColor3 = options.txtcolor,
-            Font = Enum.Font.GothamSSM;
+            Font = Enum.Font.Gotham;
             Parent = window.frame,
         });
         togglebutton.MouseButton1Click:connect(function()
@@ -161,7 +161,7 @@
             TextColor3 = options.txtcolor,
             TextColor3 = (options.bartextcolor or Color3.fromRGB(255, 255, 255));
             TextSize = 17,
-            Font = Enum.Font.GothamSSM;
+            Font = Enum.Font.Gotham;
             Text = options.text or "window",
             Name = "Window",
             Parent = window.frame,
@@ -206,7 +206,7 @@
                 TextXAlignment = Enum.TextXAlignment.Left;
                 LayoutOrder = self.Count;
                 TextSize = 14,
-                Font = Enum.Font.GothamSSM,
+                Font = Enum.Font.Gotham,
                 Parent = self.container;
             })
    
@@ -217,7 +217,7 @@
                 Position = UDim2.new(1, -25, 0, 0),
                 Size = UDim2.new(0, 25, 1, 0),
                 TextSize = 17,
-                Font = Enum.Font.GothamSSM,
+                Font = Enum.Font.Gotham,
                 Parent = label;
             })
    
@@ -247,7 +247,7 @@
                 TextXAlignment = Enum.TextXAlignment.Center;
                 TextSize = 14,
                 Text = "",
-                Font = Enum.Font.GothamSSM,
+                Font = Enum.Font.Gotham,
                 LayoutOrder = self.Count;
                 BorderSizePixel = 0;
                 Parent = self.container;
@@ -273,7 +273,7 @@
                 TextColor3 = Color3.fromRGB(255, 255, 255);
                 TextXAlignment = Enum.TextXAlignment.Left;
                 TextSize = 14,
-                Font = Enum.Font.GothamSSM,
+                Font = Enum.Font.Gotham,
                 LayoutOrder = self.Count;
                 Parent = self.container;
             })
@@ -286,7 +286,7 @@
         function window:AddLabel(text)
             self.count = self.count + 1;
            
-            local tSize = game:GetService('TextService'):GetTextSize(text, 16, Enum.Font.GothamSSM, Vector2.new(math.huge, math.huge))
+            local tSize = game:GetService('TextService'):GetTextSize(text, 16, Enum.Font.Gotham, Vector2.new(math.huge, math.huge))
    
             local button = library:Create("TextLabel", {
                 Text =  text,
@@ -296,7 +296,7 @@
                 TextColor3 = Color3.fromRGB(255, 255, 255);
                 TextXAlignment = Enum.TextXAlignment.Left;
                 TextSize = 14,
-                Font = Enum.Font.GothamSSM,
+                Font = Enum.Font.Gotham,
                 LayoutOrder = self.Count;
                 Parent = self.container;
             })
@@ -318,7 +318,7 @@
                 TextXAlignment = Enum.TextXAlignment.Center;
                 TextSize = 14,
                 Text = default,
-                Font = Enum.Font.GothamSSM,
+                Font = Enum.Font.Gotham,
                 BorderSizePixel = 0;
                 LayoutOrder = self.Count;
                 Parent = self.container;
@@ -386,7 +386,7 @@
                         TextColor3 = Color3.fromRGB(255, 255, 255);
                         BorderSizePixel = 0;
                         TextSize = 14;
-                        Font = Enum.Font.GothamSSM;
+                        Font = Enum.Font.Gotham;
                         Size = UDim2.new(1, 0, 0, 21);
                         Parent = frame;
                         ZIndex = 2;
